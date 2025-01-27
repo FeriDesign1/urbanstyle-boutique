@@ -11,11 +11,11 @@
             font-family: 'Lora', serif;
             color: #333;
         }
-        h1, h2 {
+        h1, h2, h3 {
             font-family: 'Playfair Display', serif;
         }
         .hero {
-            background-image: url('https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg');
+            background-image: url('https://via.placeholder.com/1920x600');
             background-size: cover;
             background-position: center;
         }
@@ -27,6 +27,13 @@
         .btn:hover {
             background-color: #2563EB;
         }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -37,8 +44,8 @@
             <nav>
                 <ul class="flex space-x-4">
                     <li><a href="#" class="text-gray-700 hover:text-gray-900">Főoldal</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-gray-900">Termékek</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-gray-900">Kapcsolat</a></li>
+                    <li><a href="#services" class="text-gray-700 hover:text-gray-900">Szolgáltatások</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-gray-900">Kapcsolat</a></li>
                 </ul>
             </nav>
             <div>
@@ -55,47 +62,58 @@
         </div>
     </section>
 
-    <!-- Kiemelt termékek -->
-    <main class="container mx-auto p-6">
-        <h2 class="text-3xl font-semibold mb-6">Kiemelt Termékek</h2>
+    <!-- Szolgáltatások szekció -->
+    <section id="services" class="container mx-auto p-6">
+        <h2 class="text-3xl font-semibold mb-6">Szolgáltatásaink</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Termék 1 -->
-            <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg" alt="Elegáns Sárga Ruha" class="w-full h-64 object-cover">
-                <div class="p-4">
-                    <h3 class="text-lg font-semibold">Elegáns Sárga Ruha</h3>
-                    <p class="text-gray-600">Ár: 19 990 Ft</p>
-                    <button class="mt-2 py-2 px-4 rounded btn">Kosárba</button>
-                </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h3 class="text-lg font-semibold mb-4">Egyedi Ruhatervezés</h3>
+                <p class="text-gray-600">Segítünk megvalósítani álmaid ruháját, legyen az egy különleges alkalomra vagy mindennapi viseletre.</p>
             </div>
-            <!-- Termék 2 -->
-            <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <img src="https://images.pexels.com/photos/838664/pexels-photo-838664.jpeg" alt="Fekete Klasszikus Öltöny" class="w-full h-64 object-cover">
-                <div class="p-4">
-                    <h3 class="text-lg font-semibold">Fekete Klasszikus Öltöny</h3>
-                    <p class="text-gray-600">Ár: 29 990 Ft</p>
-                    <button class="mt-2 py-2 px-4 rounded btn">Kosárba</button>
-                </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h3 class="text-lg font-semibold mb-4">Stílustanácsadás</h3>
+                <p class="text-gray-600">Professzionális tanácsokat nyújtunk, hogy mindig magabiztosan és stílusosan jelenj meg.</p>
             </div>
-            <!-- Termék 3 -->
-            <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <img src="https://images.pexels.com/photos/247204/pexels-photo-247204.jpeg" alt="Vörös Estélyi Ruha" class="w-full h-64 object-cover">
-                <div class="p-4">
-                    <h3 class="text-lg font-semibold">Vörös Estélyi Ruha</h3>
-                    <p class="text-gray-600">Ár: 24 990 Ft</p>
-                    <button class="mt-2 py-2 px-4 rounded btn">Kosárba</button>
-                </div>
+            <div class="bg-white shadow-md rounded-lg p-6">
+                <h3 class="text-lg font-semibold mb-4">Online AI Segítő</h3>
+                <p class="text-gray-600">Interaktív AI szolgáltatásunk segít kiválasztani a számodra legmegfelelőbb termékeket.</p>
             </div>
         </div>
-    </main>
+    </section>
+
+    <!-- Vélemények szekció -->
+    <section class="bg-gray-200 py-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">Ügyfél Vélemények</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <blockquote class="bg-white shadow-md rounded-lg p-6">
+                    <p class="text-gray-600 italic">"Az UrbanStyle Boutique segített megtalálni a tökéletes ruhát az esküvőmre. Minden részlet csodálatos volt!"</p>
+                    <footer class="mt-4">- Anna</footer>
+                </blockquote>
+                <blockquote class="bg-white shadow-md rounded-lg p-6">
+                    <p class="text-gray-600 italic">"Hihetetlenül professzionálisak és segítőkészek. A stílustanácsadásuk megváltoztatta a megjelenésemet!"</p>
+                    <footer class="mt-4">- Péter</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Interaktív szekció -->
+    <section class="container mx-auto p-6">
+        <h2 class="text-3xl font-semibold mb-6">Kérdezd AI segítőnket!</h2>
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+            <p class="text-gray-600 mb-4">Nem tudod, melyik ruha illik hozzád? Kérdezd interaktív AI segítőnket!</p>
+            <button class="btn py-2 px-4">Indítsd el az AI Segítőt</button>
+        </div>
+    </section>
 
     <!-- Lábléc -->
     <footer class="bg-gray-800 text-white mt-8">
         <div class="container mx-auto p-6 text-center">
             <p class="mb-4">&copy; 2025 UrbanStyle Boutique. Minden jog fenntartva.</p>
             <div class="flex justify-center space-x-4">
-                <a href="#" class="hover:text-gray-400">Facebook</a>
                 <a href="#" class="hover:text-gray-400">Instagram</a>
+                <a href="#" class="hover:text-gray-400">Facebook</a>
                 <a href="#" class="hover:text-gray-400">Twitter</a>
             </div>
         </div>
