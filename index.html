@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UrbanStyle Boutique</title>
+    <title>Responsive E-Commerce Website</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -13,11 +13,6 @@
         }
         h1, h2, h3 {
             font-family: 'Playfair Display', serif;
-        }
-        .hero {
-            background-image: url('https://via.placeholder.com/1920x600');
-            background-size: cover;
-            background-position: center;
         }
         .btn {
             background-color: #1E3A8A;
@@ -37,113 +32,73 @@
     </style>
 </head>
 <body class="bg-gray-100">
-    <!-- Header -->
     <header class="bg-white shadow-md">
-        <div class="container mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-3xl font-bold text-gray-800">UrbanStyle Boutique</h1>
-            <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="#" class="text-gray-700 hover:text-gray-900">Home</a></li>
-                    <li><a href="#services" class="text-gray-700 hover:text-gray-900">Services</a></li>
-                    <li><a href="#contact" class="text-gray-700 hover:text-gray-900">Contact</a></li>
-                </ul>
-            </nav>
-            <div>
-                <a href="#" class="text-gray-700 hover:text-gray-900">Cart</a>
-            </div>
+        <div class="container mx-auto p-4 text-center">
+            <h1 class="text-4xl font-bold text-gray-800">Responsive E-Commerce Website</h1>
+            <p class="text-gray-600 mt-2">A modern and sleek solution for online shopping</p>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero h-96 flex items-center justify-center text-white">
-        <div class="bg-black bg-opacity-50 p-6 rounded-lg text-center">
-            <h2 class="text-5xl font-bold mb-4">Discover Our New Collection!</h2>
-            <p class="text-lg">Elegance and style in one place.</p>
-            <button class="mt-4 py-2 px-6 rounded btn">Shop Now</button>
+    <section class="container mx-auto my-8 p-6 bg-white shadow-md rounded-lg">
+        <h2 class="text-3xl font-semibold mb-4">Project Overview</h2>
+        <p class="text-gray-700 mb-4">The client, <strong>UrbanStyle Boutique</strong>, needed a sleek and responsive e-commerce website to showcase their fashion collections and provide a seamless shopping experience for customers.</p>
+        <p class="text-gray-700">Their goals included improving online visibility, increasing website traffic, and offering easy payment options for global customers. Challenges included optimizing the website for both desktop and mobile users while maintaining a fast-loading experience with integrated payment gateways.</p>
+    </section>
+
+    <section class="container mx-auto my-8 p-6 bg-white shadow-md rounded-lg">
+        <h2 class="text-3xl font-semibold mb-4">Technologies Used</h2>
+        <ul class="list-disc list-inside text-gray-700">
+            <li><strong>Bootstrap</strong>: For responsive grid layout and components.</li>
+            <li><strong>Tailwind CSS</strong>: For fast and flexible styling.</li>
+            <li><strong>WooCommerce</strong>: For e-commerce functionalities.</li>
+            <li><strong>SEO Optimization</strong>: To increase organic traffic.</li>
+            <li><strong>Analytics Tools</strong>: To track user behavior and improve sales funnels.</li>
+        </ul>
+    </section>
+
+    <section class="container mx-auto my-8 p-6 bg-white shadow-md rounded-lg">
+        <h2 class="text-3xl font-semibold mb-4">Results</h2>
+        <p class="text-gray-700">The results were exceptional:</p>
+        <ul class="list-disc list-inside text-gray-700">
+            <li>50% increase in traffic within the first quarter of launch.</li>
+            <li>30% boost in monthly sales.</li>
+            <li>Improved customer satisfaction with a seamless shopping experience.</li>
+        </ul>
+    </section>
+
+    <section class="container mx-auto my-8 p-6 bg-white shadow-md rounded-lg">
+        <h2 class="text-3xl font-semibold mb-4">Project Details</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-gray-50 p-4 rounded">
+                <h3 class="text-xl font-semibold">Project Duration</h3>
+                <p class="text-gray-700">3 months</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded">
+                <h3 class="text-xl font-semibold">Project Cost</h3>
+                <p class="text-gray-700">$3,000</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded">
+                <h3 class="text-xl font-semibold">Industry</h3>
+                <p class="text-gray-700">E-commerce, Fashion</p>
+            </div>
+            <div class="bg-gray-50 p-4 rounded">
+                <h3 class="text-xl font-semibold">Start Date</h3>
+                <p class="text-gray-700">January 2025</p>
+            </div>
         </div>
     </section>
 
-    <!-- Featured Products -->
-    <section class="container mx-auto p-6">
-        <h2 class="text-3xl font-semibold mb-6 text-center">Featured Products</h2>
+    <section class="container mx-auto my-8 p-6 bg-white shadow-md rounded-lg">
+        <h2 class="text-3xl font-semibold mb-4">Gallery</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <img src="https://raw.githubusercontent.com/FeriDesign1/urbanstyle-boutique/main/Eleg%C3%A1ns%20S%C3%A1rga%20Ruha.jpg" alt="Elegant Yellow Dress" class="w-full h-64 object-cover">
-                <div class="p-4 text-center">
-                    <h3 class="text-lg font-semibold">Elegant Yellow Dress</h3>
-                    <p class="text-gray-600">Price: $99.99</p>
-                    <button class="mt-2 py-2 px-4 rounded btn">Add to Cart</button>
-                </div>
-            </div>
-            <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <img src="https://raw.githubusercontent.com/FeriDesign1/urbanstyle-boutique/main/Fekete%20Klasszikus%20%C3%96lt%C3%B6ny.jpg" alt="Classic Black Suit" class="w-full h-64 object-cover">
-                <div class="p-4 text-center">
-                    <h3 class="text-lg font-semibold">Classic Black Suit</h3>
-                    <p class="text-gray-600">Price: $149.99</p>
-                    <button class="mt-2 py-2 px-4 rounded btn">Add to Cart</button>
-                </div>
-            </div>
-            <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                <img src="https://raw.githubusercontent.com/FeriDesign1/urbanstyle-boutique/main/V%C3%B6r%C3%B6s%20Est%C3%A9lyi%20Ruha.jpg" alt="Red Evening Gown" class="w-full h-64 object-cover">
-                <div class="p-4 text-center">
-                    <h3 class="text-lg font-semibold">Red Evening Gown</h3>
-                    <p class="text-gray-600">Price: $129.99</p>
-                    <button class="mt-2 py-2 px-4 rounded btn">Add to Cart</button>
-                </div>
-            </div>
+            <img src="https://via.placeholder.com/300" alt="Screenshot 1" class="w-full h-auto rounded shadow">
+            <img src="https://via.placeholder.com/300" alt="Screenshot 2" class="w-full h-auto rounded shadow">
+            <img src="https://via.placeholder.com/300" alt="Screenshot 3" class="w-full h-auto rounded shadow">
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="bg-gray-50 py-12">
+    <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold mb-6">Our Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white shadow-md rounded-lg p-6">
-                    <h3 class="text-lg font-semibold mb-4">Custom Dress Design</h3>
-                    <p class="text-gray-600">We help you design your dream dress for special occasions or everyday wear.</p>
-                </div>
-                <div class="bg-white shadow-md rounded-lg p-6">
-                    <h3 class="text-lg font-semibold mb-4">Style Consultation</h3>
-                    <p class="text-gray-600">Get professional advice to always appear confident and stylish.</p>
-                </div>
-                <div class="bg-white shadow-md rounded-lg p-6">
-                    <h3 class="text-lg font-semibold mb-4">AI Shopping Assistant</h3>
-                    <p class="text-gray-600">Use our AI assistant to find the perfect items tailored to your style.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="bg-gray-200 py-12">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold mb-6">Customer Testimonials</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <blockquote class="bg-white shadow-md rounded-lg p-6">
-                    <p class="text-gray-600 italic">"UrbanStyle Boutique helped me find the perfect dress for my wedding. Every detail was amazing!"</p>
-                    <footer class="mt-4">- Anna</footer>
-                </blockquote>
-                <blockquote class="bg-white shadow-md rounded-lg p-6">
-                    <p class="text-gray-600 italic">"Incredibly professional and helpful. Their style advice changed my look completely!"</p>
-                    <footer class="mt-4">- Peter</footer>
-                </blockquote>
-            </div>
-        </div>
-    </section>
-
-    <!-- Interactive AI Section -->
-    <section class="container mx-auto p-6 text-center">
-        <h2 class="text-3xl font-semibold mb-6">Ask Our AI Assistant!</h2>
-        <div class="bg-white shadow-md rounded-lg p-6">
-            <p class="text-gray-600 mb-4">Not sure which item suits you best? Let our interactive AI assistant help you!</p>
-            <button class="btn py-2 px-4">Launch AI Assistant</button>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white mt-8">
-        <div class="container mx-auto p-6 text-center">
             <p class="mb-4">&copy; 2025 UrbanStyle Boutique. All rights reserved.</p>
             <div class="flex justify-center space-x-4">
                 <a href="#" class="hover:text-gray-400">Instagram</a>
