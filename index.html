@@ -1,61 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UrbanStyle Boutique - E-commerce Website</title>
+    <title>UrbanStyle Boutique</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
+    <!-- Fejléc -->
     <header class="bg-white shadow-md">
         <div class="container mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold">UrbanStyle Boutique</h1>
+            <h1 class="text-3xl font-bold text-gray-800">UrbanStyle Boutique</h1>
             <nav>
                 <ul class="flex space-x-4">
-                    <li><a href="#" class="text-gray-700 hover:text-gray-900">Home</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-gray-900">Shop</a></li>
-                    <li><a href="#" class="text-gray-700 hover:text-gray-900">Contact</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-gray-900">Főoldal</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-gray-900">Termékek</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-gray-900">Kapcsolat</a></li>
                 </ul>
             </nav>
             <div>
-                <a href="#" class="text-gray-700 hover:text-gray-900">Cart</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">Kosár</a>
             </div>
         </div>
     </header>
+
+    <!-- Fő tartalom -->
     <main class="container mx-auto p-4">
+        <!-- Hero szakasz -->
         <section class="mb-8">
-            <h2 class="text-xl font-semibold mb-4">Featured Products</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-cover bg-center h-64 rounded-lg shadow-md" style="background-image: url('https://images.pexels.com/photos/1004584/pexels-photo-1004584.jpeg');">
+                <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+                    <h2 class="text-white text-4xl font-semibold">Fedezd fel az új kollekciónkat!</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kiemelt termékek -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-4">Kiemelt Termékek</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Termék 1 -->
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/300" alt="Product" class="w-full">
+                    <img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg" alt="Stílusos nő sárga ruhában" class="w-full h-64 object-cover">
                     <div class="p-4">
-                        <h3 class="text-lg font-semibold">Stylish Jacket</h3>
-                        <p class="text-gray-600">$49.99</p>
-                        <button class="mt-2 bg-blue-500 text-white py-1 px-3 rounded">Add to Cart</button>
+                        <h3 class="text-lg font-semibold">Elegáns Sárga Ruha</h3>
+                        <p class="text-gray-600">Ár: 19 990 Ft</p>
+                        <button class="mt-2 bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600">Kosárba</button>
                     </div>
                 </div>
+                <!-- Termék 2 -->
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/300" alt="Product" class="w-full">
+                    <img src="https://images.pexels.com/photos/838664/pexels-photo-838664.jpeg" alt="Divatos férfi fekete öltözetben" class="w-full h-64 object-cover">
                     <div class="p-4">
-                        <h3 class="text-lg font-semibold">Classic Jeans</h3>
-                        <p class="text-gray-600">$39.99</p>
-                        <button class="mt-2 bg-blue-500 text-white py-1 px-3 rounded">Add to Cart</button>
+                        <h3 class="text-lg font-semibold">Fekete Klasszikus Öltöny</h3>
+                        <p class="text-gray-600">Ár: 29 990 Ft</p>
+                        <button class="mt-2 bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600">Kosárba</button>
                     </div>
                 </div>
+                <!-- Termék 3 -->
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/300" alt="Product" class="w-full">
+                    <img src="https://images.pexels.com/photos/247204/pexels-photo-247204.jpeg" alt="Női divat portré" class="w-full h-64 object-cover">
                     <div class="p-4">
-                        <h3 class="text-lg font-semibold">Casual Shoes</h3>
-                        <p class="text-gray-600">$59.99</p>
-                        <button class="mt-2 bg-blue-500 text-white py-1 px-3 rounded">Add to Cart</button>
+                        <h3 class="text-lg font-semibold">Vörös Estélyi Ruha</h3>
+                        <p class="text-gray-600">Ár: 24 990 Ft</p>
+                        <button class="mt-2 bg-blue-500 text-white py-1 px-3 rounded hover:bg-blue-600">Kosárba</button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Lábléc -->
     <footer class="bg-white shadow-md mt-8">
         <div class="container mx-auto p-4 text-center">
-            <p class="text-gray-600">&copy; 2025 UrbanStyle Boutique. All rights reserved.</p>
+            <p class="text-gray-600">&copy; 2025 UrbanStyle Boutique. Minden jog fenntartva.</p>
         </div>
     </footer>
 </body>
